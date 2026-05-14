@@ -23,10 +23,8 @@ const Footer = () => {
             <a href="#">Nuestra Misión (100% Gratis)</a>
           </div>
           <div className={styles.column}>
-            <h4>Comunidad</h4>
-            <a href="#">Twitter</a>
-            <a href="#">Discord</a>
-            <a href="#">Blog</a>
+            <h4>Contacto</h4>
+            <a href="mailto:thiagoanyapps@gmail.com">thiagoanyapps@gmail.com</a>
           </div>
           <div className={styles.column}>
             <h4>Legal</h4>

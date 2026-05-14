@@ -28,16 +28,17 @@
 }
 
 .card {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-tertiary);
   padding: 40px;
-  border-radius: var(--radius-lg);
+  border-radius: 28px;
   border: 1px solid var(--border-subtle);
-  transition: all 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
   gap: 16px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(132, 154, 137, 0.03);
 }
 
 .card::after {
@@ -54,9 +55,9 @@
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(132, 154, 137, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(110, 155, 96, 0.1);
+  border-color: rgba(110, 155, 96, 0.2);
 }
 
 .card:hover::after {

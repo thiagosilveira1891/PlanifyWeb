@@ -1,17 +1,17 @@
 :root {
   /* Color Palette - Forest & Nature Inspired */
-  --bg-primary: #F7F6F0; /* Beige cálido */
-  --bg-secondary: #EAE8DF; /* Beige ligeramente más oscuro */
+  --bg-primary: #FBF8F2; /* Crema cálido */
+  --bg-secondary: #F2EFE8; /* Crema ligeramente más oscuro */
   --bg-tertiary: #FFFFFF; /* Blanco puro para tarjetas */
   
-  --text-primary: #2C362F; /* Verde oscuro muy suave / Gris tierra */
-  --text-secondary: #5B6B61; /* Verde grisáceo suave */
+  --text-primary: #1A211D; /* Verde oscuro muy suave / Gris tierra */
+  --text-secondary: #4A5B52; /* Verde grisáceo suave */
   --text-tertiary: #849A89; /* Verde Sage */
 
   --accent-sage: #849A89;
   --accent-sage-light: #E8EDE9; /* Sage muy claro para fondos de badges */
-  --accent-forest: #2C4C3B;
-  --accent-forest-hover: #1F362A;
+  --accent-forest: #6E9B60;
+  --accent-forest-hover: #5A824E;
   
   --border-subtle: #E2DFD2;
   
@@ -30,7 +30,7 @@
   --radius-full: 9999px;
 
   /* Fonts */
-  --font-heading: 'Outfit', sans-serif;
+  --font-heading: 'Instrument Serif', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 

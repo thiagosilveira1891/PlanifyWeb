@@ -81,81 +81,197 @@
 .visualSection {
   flex: 1;
   position: relative;
-}
-
-.imageContainer {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/5;
-  background-color: var(--bg-secondary);
-  border-radius: 2rem;
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-}
-
-.abstractArt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(132, 154, 137, 0.1) 0%, rgba(226, 223, 210, 0.3) 100%);
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.circle1 {
-  position: absolute;
-  top: -10%;
-  right: -10%;
-  width: 70%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(132, 154, 137, 0.4) 0%, transparent 70%);
-  filter: blur(40px);
+.appWindow {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--bg-tertiary);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
 }
 
-.circle2 {
-  position: absolute;
-  bottom: -20%;
-  left: -10%;
-  width: 80%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(44, 76, 59, 0.15) 0%, transparent 70%);
-  filter: blur(50px);
+.windowHeader {
+  height: 32px;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
 }
 
-.glassCard {
-  width: 60%;
-  height: 50%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 32px;
+.windowControls {
+  display: flex;
+  gap: 6px;
+}
+
+.closeBtn, .minBtn, .maxBtn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.closeBtn { background-color: #FF5F56; }
+.minBtn { background-color: #FFBD2E; }
+.maxBtn { background-color: #27C93F; }
+
+.windowTitle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.appLayout {
+  display: flex;
+  height: 420px;
+}
+
+.sidebar {
+  width: 160px;
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+  justify-content: space-between;
+}
+
+.sidebarMenu, .sidebarBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: default;
+}
+
+.menuItem.active {
+  background-color: var(--accent-sage-light);
+  color: var(--accent-forest);
+  font-weight: 500;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 28px;
+  background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
   gap: 24px;
-  justify-content: center;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  z-index: 2;
-  transform: translateY(-20px);
 }
 
-.gLine {
-  height: 12px;
-  width: 100%;
-  background-color: var(--border-subtle);
-  border-radius: var(--radius-full);
+.mainHeader h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
 }
 
-.gLineShort {
-  height: 12px;
-  width: 60%;
-  background-color: rgba(132, 154, 137, 0.3);
-  border-radius: var(--radius-full);
+.mainHeader p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
+
+.dashboardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heatmapCard, .tasksCard {
+  background-color: var(--bg-tertiary);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-subtle);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.heatmapCard h4, .tasksCard h4 {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.rachaBadge {
+  font-size: 0.75rem;
+  background-color: rgba(255, 189, 46, 0.15);
+  color: #B57B00;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.heatmapGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.heatCell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: var(--accent-forest);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskName {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.taskTag, .taskTagAlert {
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.taskTag { color: var(--text-secondary); }
+.taskTagAlert { color: #D9534F; font-weight: 500; }
+

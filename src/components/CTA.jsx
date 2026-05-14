@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { Download } from 'lucide-react';
 import styles from './CTA.module.css';
 
 const CTA = () => {
@@ -28,19 +28,15 @@ const CTA = () => {
               <span>100% gratis para siempre, sin fines de lucro.</span>
             </div>
 
-            <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="Tu correo electrónico" 
-                className={styles.input}
-              />
-              <button type="submit" className={styles.button}>
-                Comenzar <ArrowRight size={18} />
+            <div className={styles.actionContainer}>
+              <button className={styles.button}>
+                <Download size={20} />
+                Descarga para Windows (.exe)
               </button>
-            </form>
+            </div>
             
             <p className={styles.disclaimer}>
-              Toma menos de 1 minuto. Sin tarjetas ni trampas.
+              Requiere Windows 10 o superior. Sin anuncios ni distracciones.
             </p>
           </div>
         </motion.div>

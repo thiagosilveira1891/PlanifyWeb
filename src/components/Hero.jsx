@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, Play, Pause, RotateCcw, Volume2 } from 'lucide-react';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <Sparkles className={styles.badgeIcon} size={14} />
-          <span>Diseñada para tu paz mental</span>
+          <span>Diseñada para estudiantes universitarios</span>
         </motion.div>
         
         <motion.h1 
@@ -69,19 +69,37 @@ const Hero = () => {
             <div className={styles.dot}></div>
             <div className={styles.dot}></div>
           </div>
+
           <div className={styles.timerCircle}>
+            <svg className={styles.timerSvg} viewBox="0 0 100 100">
+              <circle className={styles.timerTrack} cx="50" cy="50" r="46" />
+              <motion.circle 
+                className={styles.timerProgress} 
+                cx="50" cy="50" r="46" 
+                initial={{ strokeDashoffset: 289 }}
+                animate={{ strokeDashoffset: 120 }}
+                transition={{ duration: 2, ease: "easeOut", delay: 0.8 }}
+              />
+            </svg>
             <div className={styles.timerInner}>
-              <span className={styles.time}>25:00</span>
-              <span className={styles.timeLabel}>Enfocando en Filosofía</span>
+              <span className={styles.time}>50:00</span>
+              <span className={styles.timeLabel}>Deep Work</span>
             </div>
           </div>
+
+          <div className={styles.timerControls}>
+            <button className={styles.iconBtn}><RotateCcw size={18} /></button>
+            <button className={styles.playBtn}><Play size={22} className={styles.playIcon} /></button>
+            <button className={styles.iconBtn}><Volume2 size={18} /></button>
+          </div>
+
           <div className={styles.floatingCard1}>
             <span className={styles.fcTitle}>Racha actual</span>
             <span className={styles.fcValue}>12 días 🌿</span>
           </div>
           <div className={styles.floatingCard2}>
-            <span className={styles.fcTitle}>Ruido mental</span>
-            <span className={styles.fcValue}>Mínimo</span>
+            <span className={styles.fcTitle}>Horas de vuelo</span>
+            <span className={styles.fcValue}>120h 🚀</span>
           </div>
         </div>
       </motion.div>

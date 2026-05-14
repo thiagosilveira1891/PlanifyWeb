@@ -1,37 +1,37 @@
 import { motion } from 'framer-motion';
-import { Focus, Clock, BookOpen, TrendingUp, Calendar, ZapOff } from 'lucide-react';
+import { Timer, CheckSquare, BarChart3, Target, PenTool, Flame } from 'lucide-react';
 import styles from './Features.module.css';
 
 const featuresData = [
   {
-    icon: <Focus />,
-    title: 'Modo Enfoque Profundo',
-    description: 'Bloquea distracciones digitales y sumérgete en un entorno visualmente limpio diseñado para la concentración total.'
+    icon: <Timer />,
+    title: 'Modo Enfoque Avanzado',
+    description: 'Timer Pomodoro (25/5 o Deep Work 50/10) con anillo animado, sonidos ambiente (lluvia, bosque, café) y protección de racha.'
   },
   {
-    icon: <Clock />,
-    title: 'Pomodoro Orgánico',
-    description: 'Temporizadores adaptativos que respetan tus ciclos de energía, recordándote descansar antes de que llegue la fatiga.'
+    icon: <CheckSquare />,
+    title: 'Tareas y Materias',
+    description: 'Gestión completa de vida universitaria: subtareas, prioridades, fechas límite inteligentes, horarios, notas y cálculo de créditos.'
   },
   {
-    icon: <TrendingUp />,
-    title: 'Rachas Saludables',
-    description: 'Construye el hábito de estudiar celebrando la constancia sobre la intensidad. Un día a la vez.'
+    icon: <BarChart3 />,
+    title: 'Dashboard Estadístico',
+    description: 'Heatmap de 365 días estilo GitHub, gráficos de horas por semana, distribución por materia y completion rate.'
   },
   {
-    icon: <BookOpen />,
-    title: 'Organización Visual',
-    description: 'Estructura tus materias y tareas con una jerarquía clara que elimina la sobrecarga cognitiva instantáneamente.'
+    icon: <Target />,
+    title: 'Hábitos y Metas',
+    description: 'Fija objetivos académicos o personales a corto y largo plazo con milestones. Mantén el tracking diario sin estrés.'
   },
   {
-    icon: <Calendar />,
-    title: 'Progreso Semanal',
-    description: 'Visualiza tus horas de estudio en mapas de calor elegantes que te ayudan a entender tus mejores momentos del día.'
+    icon: <PenTool />,
+    title: 'Apuntes Rápidos',
+    description: 'No pierdas ninguna idea. Usa el bloc de notas integrado o el canvas de dibujo libre mientras estás en una sesión.'
   },
   {
-    icon: <ZapOff />,
-    title: 'Cero Presión',
-    description: 'Sin notificaciones agresivas ni gamificación tóxica. Planify es una herramienta, no tu jefe.'
+    icon: <Flame />,
+    title: 'Gamificación Positiva',
+    description: 'Suma horas de vuelo, desbloquea hitos (desde 10h hasta 500h) y mantén tu racha diaria estudiando el mínimo configurado.'
   }
 ];
 
