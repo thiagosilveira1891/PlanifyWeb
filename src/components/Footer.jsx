@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <div className="container">
-          <p>© {new Date().getFullYear()} Planify. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Planify. Desarrollado por Thiago Silveira. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
