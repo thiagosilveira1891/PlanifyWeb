@@ -1,0 +1,111 @@
+:root {
+  /* Color Palette - Forest & Nature Inspired */
+  --bg-primary: #F7F6F0; /* Beige cálido */
+  --bg-secondary: #EAE8DF; /* Beige ligeramente más oscuro */
+  --bg-tertiary: #FFFFFF; /* Blanco puro para tarjetas */
+  
+  --text-primary: #2C362F; /* Verde oscuro muy suave / Gris tierra */
+  --text-secondary: #5B6B61; /* Verde grisáceo suave */
+  --text-tertiary: #849A89; /* Verde Sage */
+
+  --accent-sage: #849A89;
+  --accent-sage-light: #E8EDE9; /* Sage muy claro para fondos de badges */
+  --accent-forest: #2C4C3B;
+  --accent-forest-hover: #1F362A;
+  
+  --border-subtle: #E2DFD2;
+  
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(44, 54, 47, 0.04);
+  --shadow-md: 0 8px 24px rgba(44, 54, 47, 0.06);
+  --shadow-lg: 0 20px 48px rgba(44, 54, 47, 0.08);
+
+  /* Glassmorphism subtle */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  
+  /* Border Radius */
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-sage);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-sage-light);
+  color: var(--accent-forest);
+}
