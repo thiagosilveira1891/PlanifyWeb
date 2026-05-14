@@ -29,7 +29,7 @@ const Header = () => {
         </nav>
         
         <button className={styles.ctaButton}>
-          Empieza gratis
+          Únete gratis
         </button>
       </div>
     </header>

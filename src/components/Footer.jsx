@@ -17,10 +17,10 @@ const Footer = () => {
         
         <div className={styles.links}>
           <div className={styles.column}>
-            <h4>Producto</h4>
+            <h4>Proyecto</h4>
             <a href="#">Características</a>
             <a href="#">Filosofía</a>
-            <a href="#">Precios</a>
+            <a href="#">Nuestra Misión (100% Gratis)</a>
           </div>
           <div className={styles.column}>
             <h4>Comunidad</h4>

@@ -23,6 +23,11 @@ const CTA = () => {
               Únete a estudiantes que decidieron organizarse sin presión, con un sistema que se adapta a su vida real.
             </p>
             
+            <div className={styles.freeBadge}>
+              <span className={styles.freeBadgeIcon}>🤍</span>
+              <span>100% gratis para siempre, sin fines de lucro.</span>
+            </div>
+
             <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
@@ -30,12 +35,12 @@ const CTA = () => {
                 className={styles.input}
               />
               <button type="submit" className={styles.button}>
-                Comenzar gratis <ArrowRight size={18} />
+                Comenzar <ArrowRight size={18} />
               </button>
             </form>
             
             <p className={styles.disclaimer}>
-              Toma menos de 1 minuto. No se requiere tarjeta de crédito.
+              Toma menos de 1 minuto. Sin tarjetas ni trampas.
             </p>
           </div>
         </motion.div>

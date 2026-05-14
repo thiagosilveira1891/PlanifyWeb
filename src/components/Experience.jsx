@@ -17,16 +17,16 @@ const Experience = () => {
             <div className={styles.content}>
               <p>
                 La mayoría de las aplicaciones de productividad están diseñadas para exprimir
-                cada segundo de tu día. Te llenan de notificaciones rojas, gráficos de
-                rendimiento estresantes y gamificación que te hace sentir culpable si descansas.
+                cada segundo de tu día o para venderte una suscripción premium. Te llenan de 
+                notificaciones rojas, gráficos estresantes y gamificación tóxica.
               </p>
               <p>
-                <strong>Planify es diferente.</strong>
+                <strong>Planify es diferente: es 100% gratis y sin fines de lucro.</strong>
               </p>
               <p>
-                Creemos que el mejor trabajo nace de la calma, no del pánico.
-                Hemos eliminado todo el ruido visual para dejar solo lo esencial:
-                tú, tu enfoque, y un progreso constante que respeta tu ritmo natural.
+                Creemos que la educación no debería ser un modelo de negocio. Hemos creado esta 
+                herramienta por y para estudiantes. Hemos eliminado todo el ruido visual para dejar 
+                solo lo esencial: tú, tu enfoque, y un progreso constante que respeta tu ritmo natural.
               </p>
             </div>
             
