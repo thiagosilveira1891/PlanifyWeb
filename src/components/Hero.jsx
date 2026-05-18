@@ -47,8 +47,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
           <a
-            href="https://github.com/thiagosilveira1891/planify/releases/latest/download/Planify.Setup.1.0.0.exe"
-            download
+            href="https://github.com/thiagosilveira1891/planify2/releases/download/v1.0.0/Planify.Setup.1.0.0.exe"
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles.primaryBtn}
           >
             Comienza a estudiar <ArrowRight size={16} className={styles.btnIcon} />

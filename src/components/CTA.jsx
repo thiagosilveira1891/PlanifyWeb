@@ -30,8 +30,7 @@ const CTA = () => {
 
             <div className={styles.actionContainer}>
               <a
-                href="https://github.com/thiagosilveira1891/planify/releases/latest/download/Planify.Setup.1.0.0.exe"
-                download
+                href="https://github.com/thiagosilveira1891/planify2/releases/download/v1.0.0/Planify.Setup.1.0.0.exe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.button}
