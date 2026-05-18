@@ -46,10 +46,13 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <button className={styles.primaryBtn}>
-            Comienza a estudiar
-            <ArrowRight size={18} className={styles.btnIcon} />
-          </button>
+          <a
+            href="https://github.com/thiagosilveira1891/planify/releases/latest/download/Planify.Setup.1.0.0.exe"
+            download
+            className={styles.primaryBtn}
+          >
+            Comienza a estudiar <ArrowRight size={16} className={styles.btnIcon} />
+          </a>
           <button className={styles.secondaryBtn}>
             Ver cómo funciona
           </button>

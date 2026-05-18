@@ -29,10 +29,16 @@ const CTA = () => {
             </div>
 
             <div className={styles.actionContainer}>
-              <button className={styles.button}>
-                <Download size={20} />
+              <a
+                href="https://github.com/thiagosilveira1891/planify/releases/latest/download/Planify.Setup.1.0.0.exe"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.button}
+              >
+                <Download size={18} />
                 Descarga para Windows (.exe)
-              </button>
+              </a>
             </div>
             
             <p className={styles.disclaimer}>
